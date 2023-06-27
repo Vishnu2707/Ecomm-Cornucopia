@@ -1,0 +1,140 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+<header class="bg-light-dark py-5 more" style="margin-top:20px;">
+  <div class="container px-4 px-lg-5 my-5">
+      <div class="text-center text-dark">
+          <h1 class="display-4 fw-bolder">Our Team</h1>
+          <p style="margin-top: 20px;">We are two siblings with a shared passion for art and craft. Through our online platform, we showcase our creative works and offer them for sale. With a deep love for artistic expression, we pour our hearts into each piece, ensuring that every creation reflects our dedication and skill. From handmade jewelry to unique paintings and intricate crafts, our website is a haven for art enthusiasts seeking one-of-a-kind treasures. Join us on this artistic journey as we bring imagination to life and share our artistic vision with the world.</p>
+      </div>
+      <div class="video-container">
+        <iframe width="320" height="180" src="https://www.youtube.com/embed/S6zVX5Iy3Xc" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</header>
+<style>
+  .video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.video-container iframe {
+    width: 60%;
+    height: 80%;
+}      
+</style>
+  <div class="row" style="justify-content: center;">
+    <div class="column">
+      <div class="card">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Jane Doe</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>jane@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="{% static 'App/me.jpg' %}" alt="Mike" style="width:100%">
+        <div class="container">
+          <h3 style="text-align: center;margin-top: 20px;">Vishnu Ajith</h3>
+          <p class="title">Developer</p>
+          <p style="text-align: center;" class="text-muted">I'm a tech enthusiast who likes to play with different technologies and turn problems into solutions. In addition to my passion for Linux administration, I am also a talented web developer who takes great pleasure in building dynamic and engaging web applications.</p>
+          <p><a href="mailto:abhinavshyjasujeesh@gmail.com"><button class="button" style="margin-top: 20px;">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+        <div class="container">
+          <h2>John Doe</h2>
+          <p class="title">Designer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>john@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-top: 30px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  text-align: center;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+{%endblock%}
